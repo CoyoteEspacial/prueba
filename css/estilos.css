@@ -1,0 +1,637 @@
+header, section, footer{
+
+	width: 1341px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom:2px;
+	overflow: hidden;
+
+}
+
+body{
+font-family: verdana, Tahoma;/*ripo de letra que se usa*/
+background-image: url(fondo.jpg);/*imagen de fondo*/
+background-attachment: fixed;  /*para que el fondo quede fijo*/
+background-size: cover;
+
+
+
+
+
+}
+header{
+background-color: rgba(229, 190, 190, 0.0); /*se usa para generar transparencia, el ultimo numero  es canal alfa: se usa en decimal, 
+donde 0 es transparente, y 1 es opaco. cuando este mas cercano al sera mas transparente, y mas cercad del 1 sera mas opaco.*/
+height: 80px;
+position: sticky;
+top:0;
+
+
+}
+#marca{
+width:250px;
+height:80px;
+background-image: url(logo.jpg);
+
+float: left;
+padding: 10px;
+box-sizing: border-box;/*necesario, cuando se agrega padding, esto hace que el padding no se vaya para afuera*/
+}
+
+h1{
+	margin: 0;
+	float: left;
+	font-size: 19px;
+	font-family:'Antonio', sans-serif;
+}
+#menu{
+width:400px;
+height:80px;
+
+float: right;  }
+
+#menu ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#menu ul li {
+	display: inline;
+}
+#menu ul li a {
+	display: inline-block;
+	width: 95px;
+	height: 80px;
+	background-color: #41D94C;
+	margin-bottom: 5px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 10%;
+	background-color: rgba(229, 190, 190, 0.0);
+
+}
+ 
+#menu ul li a:hover{
+	background-color: #999999;
+	color:#000000;
+
+
+}
+#sec1{
+height: 700px;
+
+}
+
+
+
+#animacion{
+	height: 300px;
+	width: 1341px;
+	overflow: hidden;
+position: relative;
+bottom: -100px ;
+font-size: 40px;
+color: white;
+animation-duration: 5s;
+  animation-name: animacion;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-duration: 6s;
+  animation-name: animacion;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+
+  
+
+  
+ 
+ }
+
+
+@keyframes animacion {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+   margin-left:0%;
+   width:100%;
+ }
+}
+
+#contactese{
+	position: relative;
+	width: 300px;
+	text-align: none;
+	bottom: -200px;
+
+}
+
+
+
+
+
+
+#sec2{
+background-color: #D729B0;
+height: 800px;
+background-image: url(IMG_0504.jpg);
+background-size: cover;
+}
+
+h2{
+	text-align: center;
+	position: relative;
+	bottom: -100px;
+	color: white;
+}
+#historia{
+height: 960px;
+width: 900px;
+position: relative;
+left: 200px;
+
+}
+.palabra{
+font-size: 15px;
+text-align: center;
+	position: relative;
+	bottom: -130px;
+
+}
+
+#sec3{
+background-color: #69CDD1;
+height: 700px;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+
+#socios{
+	height: 475px;
+	width: 670.5px;
+	background-color:#FF0000;
+	background-image: url(img8.jpg);
+	background-size: cover;
+}
+
+.titulo-socio{
+position: relative;
+top: 70px;
+
+}
+
+.parrafo{
+	position: relative;
+	top: 80px;
+	left: 20px;
+}
+
+.galeria{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px 5px;
+	position: relative;
+	left: 20px;
+	bottom: -70px;
+}
+
+.columna{
+	flex: 40%;
+	max-width: 20%;
+	padding: 0 4px;
+}
+
+.columna img{
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 60%;
+	filter: grayscale(100%);
+	transition: all .3s ease; 
+
+}
+
+.columna img:hover{
+	cursor: pointer;
+	filter: grayscale(0%);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	transform: scale(1.1);
+}
+
+.overlay{
+
+	position: fixed ;
+	left: 0;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 10000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .7s ease;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay .slideshow{
+	width: 90%;
+	height: 90%;
+	background-color: rgba(255, 255, 255, .9);
+	color: #000;
+	position: relative;
+	display: flex;
+	justify-content: center;
+
+}
+
+.slideshow img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.btn_cerrar{
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	font-size: 35px;
+	background-color: rgba(0, 0, 0, .7);
+	color: #FFF;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	transition: all .2s ease;
+	
+}
+
+.btn_cerrar:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+
+}
+
+.botones{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	color: #000;
+	display: flex;
+	justify-content: center;
+	font-size: 70px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	color: rgb(240, 106, 45);
+}
+
+.botones:hover > i{
+	transform: scale(1.1);
+	transition: all .2s ease;
+}
+
+.atras{
+	left: 20px;
+
+}
+
+.adelante{
+	right: 20px;
+}
+
+.mdi{
+	pointer-events: none;
+}
+
+#noticias{
+	height: 475px;
+	width: 670.5px;
+	background-color: #2CD130;
+	background-image: url(img4.jpg);
+	background-size: cover;
+}
+
+#ul{
+	position: relative;
+	top: 80px;
+}
+#marcas{
+	height: 225px;
+	width: 1341px;
+	background-color: lightgray;
+	
+}
+
+#empresas{
+	position: relative;
+	top: 50px;
+	font-size: 24px;
+}
+ 
+
+#div1{
+position:relative;
+width:1341px;
+height:200px;
+overflow:hidden; 
+top: 70px;
+left: 30px;
+ }
+  
+#div2{
+position:absolute;
+}
+#li{ 
+float:left;
+list-style-type:none;
+padding:3px;
+}
+#img{
+border:none;
+}
+#div2 #li #a:hover{top:-10px;}
+ 
+ #a{
+  position:relative;
+}
+     
+     
+        
+
+#sec4{
+background-color: #A9AE15;
+height: 700px;
+background-image: url(IMG_0501.jpg);
+background-size: cover;
+
+}
+
+#contacto{
+width: 600px;
+background-color: ;
+position: relative;
+bottom: -80px;
+font-size: 40px;
+left: 400px;
+margin-top: 5px;
+
+}
+
+.contacto{
+	
+	position: relative;
+	bottom: -70px;
+	font-size: 40px;
+	left: 400px;
+
+}
+
+#flecha{
+
+	height: 100px;
+	width: 1341px;
+	position: relative;
+	left: 880px;
+
+}
+footer{
+background-color: lightgray;
+height: 150px;
+display: flex;
+flex-wrap: wrap;
+}
+
+#telefono{
+	height: 150px;
+	width: 447px;
+	
+}
+
+#logo-telefono{
+	width: 50px;
+	position: relative;
+	top: 20px;
+	left: 200px;
+
+}
+
+.tel{
+	position: relative;
+	top: 30px;
+	left: 150px;
+}
+
+.tel1{
+	position: relative;
+	top: 30px;
+	left: 120px;
+}
+#direccion{
+	height: 150px;
+	width: 447px;
+	
+}
+#logo-direccion{
+	width: 50px;
+	position: relative;
+	top: 20px;
+	left: 200px;
+
+}
+
+
+.dir{
+	position: relative;
+	top: 30px;
+	left: 150px;
+}
+
+
+
+.dir1{
+	position: relative;
+	top: 30px;
+	left: 170px;
+
+}
+#email{
+	height: 150px;
+	width: 447px;
+}
+
+#logo-email{
+	width: 50px;
+	position: relative;
+	top: 20px;
+	left: 200px;
+
+}
+
+
+.mail{
+	position: relative;
+	top: 30px;
+	left: 90px;
+}
+
+.mail1{
+	position: relative;
+	top: 30px;
+	left: 125px;
+}
+
+.mail2{
+	position: relative;
+	top: 15px;
+	left: 110px;
+}
+
+@media all and (min-width:600px) and (max-width:1023px){/*una interesante practica es copiar y pegar todos los estilos, sacando lo que no quiero que se modifique, 
+	y dejando adentro de las llaves aquello que se tiene que modificar*/
+
+header, section, footer{
+
+	width: 580px;
+	
+
+}
+
+
+#marca{
+width:130px;
+
+}
+
+
+#menu{
+width:350px;
+height:60px;
+ }
+
+
+#menu ul li a {
+	padding: 10px 5px;
+}
+
+#sec2{
+
+height: 800px;
+}
+
+#f1_izq{
+display: none;
+
+}
+
+#f1_der{
+width: 580px;
+
+}
+.palabra{
+font-size: 15px;
+
+}
+#f2_izq{
+width: 580px;
+height:160px;
+
+}
+#f2_ctr{
+width:0px;
+
+}
+#f2_der{
+width: 20px;
+
+}
+#f3{
+width: 960px;
+
+}
+#sec3{
+
+height: 500px;
+
+}
+#sec4{
+
+height: 600px;
+
+}
+
+	
+}/*fin @media* 600 a 102*/
+
+@media all and (max-width:599px){
+header, section, footer{
+
+	width: 90%;
+	
+}
+
+header{
+
+height: auto;
+position: relative;
+top:0;
+}
+
+#marca #menu #f1_izq #f1_der #f2_izq #f2_ctr #f2_der #sec2 #f3 #sec3 #sec4{
+width:100%;
+height:auto;
+float: none;
+
+}
+
+h1{
+	text-align: center;
+}
+
+
+#menu ul li {
+	display: block;
+}
+#menu ul li a {
+	
+	width: 100%;
+	padding: 30px 0px;
+	text-align: center;
+	
+}
+ 
+#menu ul li a:hover{
+	background-color: #999999;
+	color:#000000;
+
+
+}
+#sec1{
+background-image: url(caravansary-4519435_640.jpg);
+background-size: cover; /*esto se usa cuando la imagen es muy grande, esto lo ajusta al tamaño de la caja*/
+height: 500px;
+
+}
+
+
+.jirafa{
+height: 90%;/*para cambiar  el tamaño de la imagen, usar esto o el width al 100% pero nunca los dos a la vez. ver cual se ajusta mejor*/
+}
+.palabra{
+font-size: 15px;
+
+}
+
+	
+}/*fin @media* -599px*/
