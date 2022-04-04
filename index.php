@@ -214,7 +214,7 @@ Agrupacion de Colaboracion Empresaria.</p>
 	</section>
 	<section id="sec4">
 		
-		<p class="contacto" style="color:white;">Contactese con nosotros</p>
+		<p class="contacto" style="color:white;">Contactese con nosotros....</p>
 			
 	    <div id="contacto">
 			
@@ -254,7 +254,7 @@ Agrupacion de Colaboracion Empresaria.</p>
 
 
 
-<p class="tel">Nuestros Telefonos:</p>
+<p class="tel">Nuestros Telefonos:::</p>
 <p class="tel1">Tel: (0221) 4916558 / 49165559
 </p>
 
