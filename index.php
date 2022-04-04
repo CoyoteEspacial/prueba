@@ -180,7 +180,7 @@ Agrupacion de Colaboracion Empresaria.</p>
 		
 		<div id="marcas">
 
-			<h2 id="empresas">Algunas de las empresas que nos confian sus productos</h2>
+			<h2 id="empresas">Algunas de las empresas que nos confian sus productos...</h2>
 
 			<!--  "marcas" section  of diferent branches, made it with javascript -->
                   
