@@ -166,7 +166,7 @@ Agrupacion de Colaboracion Empresaria.</p>
 		<div id="noticias">
 			<h2 class="titulo-socio">Noticias</h2>
 			<ul id="ul">
-				<li><a href="#" target="new" style="text-decoration: none; color: white;">Le damos la bienvenida a un nuevo Socio: Supmercados "Constancio".</a></li>
+				<li><a href="#" target="new" style="text-decoration: none; color: white;">Le damos la bienvenida a un nuevo Socio: Supmercados "Constancio".....</a></li>
 
 				<li><a href="#" target="new" style="text-decoration: none; color: white;">tenemos el agrado de informarles que Galletas de Agua, se suma a nuestros productos.</a></li>
 
